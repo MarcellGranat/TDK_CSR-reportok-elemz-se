@@ -17,11 +17,6 @@ url_nasdaq <- str_c("https://www.responsibilityreports.com/HostedData/Responsibi
 
 url_nyse <- str_replace(url_nasdaq, "NASDAQ", "NYSE")
 
-if (!dir.exists("raw_pdf_files")) {
-  dir.create("raw_pdf_files")
-  message("raw_pdf_files folder created!")
-}
-
 download_pdf <- function(x) {
 
   ticker <- str_extract(x, "NASDAQ_.*_2020|NYSE_.*_2020") %>%

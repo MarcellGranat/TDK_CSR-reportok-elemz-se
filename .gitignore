@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 raw_pdf_files/
+intermediate-data/
+*.Rproj
+*.DS_Store
